@@ -1,0 +1,26 @@
+{
+  "name": "exec-fallback",
+  "version": "1.0.0",
+  "description": "fallback to executable if a method call falls.",
+  "main": "exec-fallback.js",
+  "scripts": {
+    "lint": "standard",
+    "test": "standard && tap test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/martinheidegger/exec-fallback.git"
+  },
+  "author": "Martin Heidegger <martin.heidegger@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martinheidegger/exec-fallback/issues"
+  },
+  "homepage": "https://github.com/martinheidegger/exec-fallback",
+  "devDependencies": {
+    "tap": "^2.3.1"
+  },
+  "dependencies": {
+    "string-argv": "0.0.1"
+  }
+}
