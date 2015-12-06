@@ -19,8 +19,5 @@
   "homepage": "https://github.com/martinheidegger/exec-fallback",
   "devDependencies": {
     "tap": "^2.3.1"
-  },
-  "dependencies": {
-    "string-argv": "0.0.1"
   }
 }
