@@ -1,3 +1,3 @@
-#!/bin/bash
+#!/usr/bin/env node
 
-date +%s%3
+console.log(Date.now())
