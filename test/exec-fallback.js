@@ -143,21 +143,26 @@ tap.test('ensure order of calllbacks', function (t) {
 })
 
 tap.test('manual invalidation', function (t) {
-  var f = fb(function () { return Date.now() }, path.join(__dirname, 'baz.sh'), 10000000)
+  var nr = 1
+  var f = fb(function () { return nr }, path.join(__dirname, 'baz.sh'), 10000000)
   f(function (error, first) {
     t.equal(error, null)
-    t.notEqual(first, undefined)
+    t.equal(first, 1)
     f(function (error, second) {
       t.equal(error, null)
       t.equal(first, second)
+      nr = 3
       f.invalidate()
-      f(function (error, second) {
+      nr = 4
+      f(function (error, third) {
         t.equal(error, null)
-        t.notEqual(first, second)
-        t.notEqual(second, undefined)
+        t.notEqual(first, third)
+        t.equal(third, 4)
         t.end()
       })
+      nr = 5
     })
+    nr = 2
   })
 })
 
