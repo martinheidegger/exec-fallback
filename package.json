@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/martinheidegger/exec-fallback",
   "devDependencies": {
-    "standard": "^5.4.1",
+    "standard": "^6.0.4",
     "tap": "^5.4.1"
   }
 }
