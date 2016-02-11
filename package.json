@@ -1,6 +1,6 @@
 {
   "name": "exec-fallback",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "fallback to executable if a method call falls.",
   "main": "exec-fallback.js",
   "scripts": {
